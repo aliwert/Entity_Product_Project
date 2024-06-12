@@ -22,5 +22,11 @@ namespace Entity_Product_Project
             Form1 fr = new Form1();
             fr.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FrmProduct product = new FrmProduct();
+            product.Show();
+        }
     }
 }
