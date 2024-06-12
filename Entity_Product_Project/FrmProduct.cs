@@ -36,5 +36,25 @@ namespace Entity_Product_Project
             MessageBox.Show("Product added to system");
 
         }
+
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+            int b = Convert.ToInt32(TxtId.Text);
+            var pro = db.Tbl_Product.Find(b);
+            db.Tbl_Product.Remove(pro);
+            db.SaveChanges();
+            MessageBox.Show("Product deleted");
+        }
+
+        private void BtnUpdate_Click(object sender, EventArgs e)
+        {
+            int b = Convert.ToInt32(TxtId.Text);
+            var pro = db.Tbl_Product.Find(b);
+            pro.PRODUCTID = TxtProduct.Text;
+            pro.STOCK = short.Parse(TxtStock.Text);
+            pro.MARKA =TxtBrand.Text;
+            db.SaveChanges();
+            MessageBox.Show("Product updated");
+        }
     }
 }
