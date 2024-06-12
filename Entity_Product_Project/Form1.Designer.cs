@@ -35,7 +35,7 @@
             this.BtnList = new System.Windows.Forms.Button();
             this.BtnAdd = new System.Windows.Forms.Button();
             this.BtnDelete = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.BtnUpdate = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -102,14 +102,15 @@
             this.BtnDelete.UseVisualStyleBackColor = true;
             this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
-            // button4
+            // BtnUpdate
             // 
-            this.button4.Location = new System.Drawing.Point(229, 191);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(110, 33);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "Update";
-            this.button4.UseVisualStyleBackColor = true;
+            this.BtnUpdate.Location = new System.Drawing.Point(229, 191);
+            this.BtnUpdate.Name = "BtnUpdate";
+            this.BtnUpdate.Size = new System.Drawing.Size(110, 33);
+            this.BtnUpdate.TabIndex = 7;
+            this.BtnUpdate.Text = "Update";
+            this.BtnUpdate.UseVisualStyleBackColor = true;
+            this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
             // dataGridView1
             // 
@@ -126,7 +127,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(956, 495);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.BtnUpdate);
             this.Controls.Add(this.BtnDelete);
             this.Controls.Add(this.BtnAdd);
             this.Controls.Add(this.BtnList);
@@ -153,7 +154,7 @@
         private System.Windows.Forms.Button BtnList;
         private System.Windows.Forms.Button BtnAdd;
         private System.Windows.Forms.Button BtnDelete;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button BtnUpdate;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
