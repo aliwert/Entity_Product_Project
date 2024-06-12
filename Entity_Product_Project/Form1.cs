@@ -32,5 +32,14 @@ namespace Entity_Product_Project
             db.SaveChanges();
             MessageBox.Show("Category added");
         }
+
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+            int b = Convert.ToInt32(textBox1.Text);
+            var ctg = db.Tbl_Category.Find(b);
+            db.Tbl_Category.Remove(ctg);
+            db.SaveChanges();
+            MessageBox.Show("Category deleted");
+        }
     }
 }
