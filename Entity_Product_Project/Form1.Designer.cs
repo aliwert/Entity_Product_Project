@@ -32,8 +32,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnList = new System.Windows.Forms.Button();
+            this.BtnAdd = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -72,23 +72,25 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Category Name:";
             // 
-            // button1
+            // BtnList
             // 
-            this.button1.Location = new System.Drawing.Point(46, 137);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 33);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "List";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnList.Location = new System.Drawing.Point(46, 137);
+            this.BtnList.Name = "BtnList";
+            this.BtnList.Size = new System.Drawing.Size(110, 33);
+            this.BtnList.TabIndex = 4;
+            this.BtnList.Text = "List";
+            this.BtnList.UseVisualStyleBackColor = true;
+            this.BtnList.Click += new System.EventHandler(this.BtnList_Click);
             // 
-            // button2
+            // BtnAdd
             // 
-            this.button2.Location = new System.Drawing.Point(46, 192);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 33);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnAdd.Location = new System.Drawing.Point(46, 192);
+            this.BtnAdd.Name = "BtnAdd";
+            this.BtnAdd.Size = new System.Drawing.Size(110, 33);
+            this.BtnAdd.TabIndex = 5;
+            this.BtnAdd.Text = "Add";
+            this.BtnAdd.UseVisualStyleBackColor = true;
+            this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // button3
             // 
@@ -110,6 +112,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(495, 20);
             this.dataGridView1.Name = "dataGridView1";
@@ -124,8 +127,8 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnAdd);
+            this.Controls.Add(this.BtnList);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
@@ -146,8 +149,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnList;
+        private System.Windows.Forms.Button BtnAdd;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridView dataGridView1;
