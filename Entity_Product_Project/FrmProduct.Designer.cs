@@ -38,7 +38,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.TxtPrice = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.TxtStatus = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.BtnList = new System.Windows.Forms.Button();
@@ -131,12 +131,12 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Price:";
             // 
-            // textBox6
+            // TxtStatus
             // 
-            this.textBox6.Location = new System.Drawing.Point(141, 260);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(161, 27);
-            this.textBox6.TabIndex = 11;
+            this.TxtStatus.Location = new System.Drawing.Point(141, 260);
+            this.TxtStatus.Name = "TxtStatus";
+            this.TxtStatus.Size = new System.Drawing.Size(161, 27);
+            this.TxtStatus.TabIndex = 11;
             // 
             // label6
             // 
@@ -204,6 +204,7 @@
             this.BtnClear.TabIndex = 18;
             this.BtnClear.Text = "Clear";
             this.BtnClear.UseVisualStyleBackColor = true;
+            this.BtnClear.Click += new System.EventHandler(this.BtnClear_Click);
             // 
             // dataGridView1
             // 
@@ -234,7 +235,7 @@
             this.Controls.Add(this.BtnAdd);
             this.Controls.Add(this.BtnList);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.TxtStatus);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.TxtPrice);
             this.Controls.Add(this.label5);
@@ -250,6 +251,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmProduct";
             this.Text = "FrmProduct";
+            this.Load += new System.EventHandler(this.FrmProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -268,7 +270,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox TxtPrice;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox TxtStatus;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button BtnList;

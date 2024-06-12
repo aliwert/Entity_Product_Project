@@ -28,5 +28,10 @@ namespace Entity_Product_Project
             FrmProduct product = new FrmProduct();
             product.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
