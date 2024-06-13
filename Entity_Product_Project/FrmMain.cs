@@ -31,7 +31,8 @@ namespace Entity_Product_Project
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            FrmStatistic s = new FrmStatistic(); 
+            s.Show();
         }
     }
 }

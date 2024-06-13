@@ -24,6 +24,7 @@ namespace Entity_Product_Project
         public string CUSTOMERNAME { get; set; }
         public string CUSTOMERSURNAME { get; set; }
         public string CITY { get; set; }
+        public Nullable<bool> STATUS { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Tbl_Sales> Tbl_Sales { get; set; }
