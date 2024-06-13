@@ -31,6 +31,7 @@ namespace Entity_Product_Project
         public virtual DbSet<Tbl_Customer> Tbl_Customer { get; set; }
         public virtual DbSet<Tbl_Product> Tbl_Product { get; set; }
         public virtual DbSet<Tbl_Sales> Tbl_Sales { get; set; }
+        public virtual DbSet<Tbl_Admin> Tbl_Admin { get; set; }
     
         public virtual ObjectResult<string> GETBRAND()
         {

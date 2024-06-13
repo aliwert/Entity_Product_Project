@@ -16,7 +16,7 @@ namespace Entity_Product_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMain());
+            Application.Run(new FrmRegister());
         }
     }
 }
