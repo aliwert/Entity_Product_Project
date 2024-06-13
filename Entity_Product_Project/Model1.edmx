@@ -80,6 +80,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="GETBRAND" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="DbEntityProductModelStoreContainer">
           <EntitySet Name="Tbl_Category" EntityType="Self.Tbl_Category" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tbl_Customer" EntityType="Self.Tbl_Customer" Schema="dbo" store:Type="Tables" />
@@ -200,6 +201,7 @@
             <End Role="Tbl_Product" EntitySet="Tbl_Product" />
             <End Role="Tbl_Sales" EntitySet="Tbl_Sales" />
           </AssociationSet>
+          <FunctionImport Name="GETBRAND" ReturnType="Collection(String)" />
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
@@ -250,6 +252,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="GETBRAND" FunctionName="DbEntityProductModel.Store.GETBRAND" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

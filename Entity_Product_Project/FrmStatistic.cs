@@ -28,7 +28,7 @@ namespace Entity_Product_Project
             label7.Text = db.Tbl_Customer.Count(b => b.STATUS == false).ToString();
 
 
-            
+            label21.Text = db.GETBRAND().FirstOrDefault();
             label11.Text = db.Tbl_Product.Sum(a => a.STOCK).ToString();
             label9.Text = db.Tbl_Product.Count(i => i.CATEGORY == 1).ToString();
             label19.Text = db.Tbl_Sales.Sum(c => c.PRICE).ToString();
