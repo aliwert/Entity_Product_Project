@@ -22,7 +22,13 @@ namespace Entity_Product_Project
         {
             label2.Text = db.Tbl_Category.Count().ToString();
             label3.Text = db.Tbl_Product.Count().ToString();
-            label5.Text = db.Tbl_Customer.Count().ToString();
+
+            // 
+            label5.Text = db.Tbl_Customer.Count(a => a.STATUS == true).ToString();
+            label7.Text = db.Tbl_Customer.Count(b => b.STATUS == false).ToString();
+
+            label11.Text = db.Tbl_Product.Sum(a => a.STOCK).ToString();
+
         }
     }
 }
