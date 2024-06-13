@@ -423,9 +423,9 @@
             this.label24.AutoSize = true;
             this.label24.Location = new System.Drawing.Point(3, 9);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(42, 19);
+            this.label24.Size = new System.Drawing.Size(119, 19);
             this.label24.TabIndex = 0;
-            this.label24.Text = "label";
+            this.label24.Text = "Total Computers";
             // 
             // FrmStatistic
             // 
