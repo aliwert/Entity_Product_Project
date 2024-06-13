@@ -220,9 +220,9 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(3, 9);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(126, 19);
+            this.label10.Size = new System.Drawing.Size(125, 19);
             this.label10.TabIndex = 0;
-            this.label10.Text = "Beyaz Esya Sayisi";
+            this.label10.Text = "White Appliances";
             // 
             // panel6
             // 
@@ -278,9 +278,9 @@
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(3, 9);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(154, 19);
+            this.label14.Size = new System.Drawing.Size(168, 19);
             this.label14.TabIndex = 0;
-            this.label14.Text = "En Yüksek Fiyatli Urun";
+            this.label14.Text = "Most Expensive Product";
             // 
             // panel8
             // 
@@ -307,9 +307,9 @@
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(3, 9);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(150, 19);
+            this.label16.Size = new System.Drawing.Size(128, 19);
             this.label16.TabIndex = 0;
-            this.label16.Text = "En Dusuk Fiyatli Urun";
+            this.label16.Text = "Cheapest Product";
             // 
             // panel9
             // 
@@ -365,9 +365,9 @@
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(3, 9);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(107, 19);
+            this.label20.Size = new System.Drawing.Size(101, 19);
             this.label20.TabIndex = 0;
-            this.label20.Text = "Kasadaki Tutar";
+            this.label20.Text = "Register Total";
             // 
             // panel11
             // 
@@ -394,9 +394,9 @@
             this.label22.AutoSize = true;
             this.label22.Location = new System.Drawing.Point(3, 9);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(156, 19);
+            this.label22.Size = new System.Drawing.Size(145, 19);
             this.label22.TabIndex = 0;
-            this.label22.Text = "En Fazla Urunlu Marka";
+            this.label22.Text = "Most Stocked Brand";
             // 
             // panel12
             // 
